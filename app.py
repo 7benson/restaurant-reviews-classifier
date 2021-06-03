@@ -14,7 +14,6 @@ from sklearn.feature_extraction.text import CountVectorizer
 app=Flask(__name__)
 
 model=joblib.load('./static/model/restaurent_review_model.pkl')
-df=pd.read_csv('./static/data/Restaurant_Reviews.tsv',sep='\t', encoding='latin-1')
 stemmer=PorterStemmer()
 @app.route('/')
 def home(message=""):
