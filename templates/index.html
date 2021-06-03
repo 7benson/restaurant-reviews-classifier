@@ -3,15 +3,14 @@
 {% block body %}
 <section id="hero">
   <div class="hero-container">
-    <h1>Welcome to Spam SMS Detector</h1>
+    <h1>Welcome to Restaurent Review Classifier</h1>
     <h2>Note : The Prediction is based upon Machine Learning Model with 98% Accuracy</h2>
     <form style='width:-webkit-fill-available' action='/predict/' method="post">
       <div class="form-group"  style='width:-webkit-fill-available!important;margin:10px 25vw;'>
         <p style='color:red;'>{{message}}</p>
-        <textarea   class="form-control" id='sentence' name='sentence' id="exampleFormControlTextarea1" placeholder="Enter your SMS text here ...." rows="4"></textarea>
+        <textarea   class="form-control" id='sentence' name='sentence' id="exampleFormControlTextarea1" placeholder="Enter your Review here ...." rows="4"></textarea>
       </div>
       <button type="submit" class="btn-get-started">Predict</button>
-      <!-- <a type="submit" class="btn-get-started">Predict</a> -->
     </form>
   </div>
 </section>

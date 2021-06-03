@@ -33,9 +33,9 @@ def predict():
         print("\n\n\n\n\n\n\n")
         print("\n\n\n\n\n\n\n")
         if(result==1):
-            return render_template('predict.html',text="The SMS is NOT spam")
+            return render_template('predict.html',text="Your Restaurent is sooo Good")
         else:
-            return render_template('predict.html',text="The SMS is SPAM")
+            return render_template('predict.html',text="Your Restaurent is n't good enough to visit")
 
 
 def preprocess_and_predict(sentence):
